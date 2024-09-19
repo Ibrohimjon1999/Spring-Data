@@ -17,13 +17,13 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Book bookDDD = new Book("Domain Driven Design", "123", "RandomHouse");
+        Book bookDDD = new Book("Domain Driven Design", "123", "RandomHouse", null);
 
         System.out.println("Id : " + bookDDD.getId());
         Book savedDDD = bookRepository.save(bookDDD);
 
         System.out.println("Id : " + savedDDD.getId());
-        Book bookSIA = new Book("Spring In Action", "234234", "Oriely");
+        Book bookSIA = new Book("Spring In Action", "234234", "Oriely", null);
 
         Book saveSIA = bookRepository.save(bookSIA);
 
